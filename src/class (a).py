@@ -9,6 +9,7 @@ class Shop:
     def open_shop(self):
         print(f'Магазин : "{self.shop_name}" відкритий')
 
+
 store = Shop("Папая", "Одяг")
 #store1 = Shop()
 print(store.shop_name)
