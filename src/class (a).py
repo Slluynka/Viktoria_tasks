@@ -7,7 +7,7 @@ class Shop:
         print(f'shop_name : {self.shop_name},  store_type: {self.store_type}')
 
     def open_shop(self):
-        print(f'Магазин : "{self.shop_name}" відкритий')
+        print(f'Магазин: "{self.shop_name}" відкритий')
 
 
 store = Shop("Папая", "Одяг")
