@@ -22,12 +22,12 @@ class User:
         self.login_attempts = 0
         print(self.login_attempts)
 class Admin(User):
-    def __init__(self, first_name, last_name, birth_date, gender, login_attempts, privileges):
+    def __init__(self, first_name, last_name, birth_date, gender, login_attempts):
         super().__init__(first_name, last_name, birth_date, gender, login_attempts)
-        self.privileges = privileges
+        self.privileges = ['Allowed to add message',
+              'Allowed to delete message', 'Allowed to ban users']
     def show_privileges(self):
         print(self.privileges)
 admin = Admin("Victoria", "Yeremitsa",
-              '06.11.2008', 'female',3, ['Allowed to add message',
-              'Allowed to delete message', 'Allowed to ban users'])
+              '06.11.2008', 'female',3)
 admin.show_privileges()
