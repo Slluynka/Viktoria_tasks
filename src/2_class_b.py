@@ -20,7 +20,6 @@ class User:
         self.login_attempts += 1
     def reset_login_attempts(self):
         self.login_attempts = 0
-#що воно закидує у метод з одни атрибутом селф?
 user1 = User('Nastia', 'Yeremitsa', '06.11.2008', 'female')
 user1.increment_login_attempts()
 user1.increment_login_attempts()
